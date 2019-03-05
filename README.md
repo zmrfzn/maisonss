@@ -1,2 +1,2 @@
 # maisonss- start of project
-Initializing empty repo
+Initializing empty repo.
