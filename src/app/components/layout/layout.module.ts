@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { BrandsComponent } from './brands/brands.component';
 
 
 @NgModule({
@@ -16,12 +17,14 @@ import { HomeComponent } from './home/home.component';
     declarations: [
         HeaderComponent,
         FooterComponent,
-        HomeComponent
+        HomeComponent,
+        BrandsComponent
     ],
     exports: [
         HeaderComponent,
         FooterComponent,
-        HomeComponent
+        HomeComponent,
+        BrandsComponent
     ],
 })
 export class LayoutModule { }

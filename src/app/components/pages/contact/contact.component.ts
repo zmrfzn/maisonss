@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -6,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public href = '';
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.href = this.router.url;
   }
 
 }
