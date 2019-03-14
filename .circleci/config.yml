@@ -44,9 +44,11 @@ jobs:
           name : Genereate prod build package
           command : ng build --prod
       - run:
-          command: ls -l
+          command: git checkout gh-pages
       - run:
-          command: git branch; git log;
+          command: git add dist/*
+       - run:
+          command: git commit -m "Circle CI Build update"; git push origin/gh-pages
       - run:
           command: |
             ngh --token ${TOKEN} --branch=gh-pages
