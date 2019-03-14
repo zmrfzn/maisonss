@@ -47,7 +47,7 @@ jobs:
           command: git checkout gh-pages
       - run:
           command: git add dist/*
-       - run:
+      - run:
           command: git commit -m "Circle CI Build update"; git push origin/gh-pages
       - run:
           command: |
