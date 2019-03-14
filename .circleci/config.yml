@@ -44,4 +44,4 @@ jobs:
           command : ng build --prod
       - run:
           command: |
-            ngh --token 3b5a20008779cae8b5d72e9abcad9c3e8569cc71 --branch=gh-pages
+            ngh --token ${TOKEN} --branch=gh-pages
