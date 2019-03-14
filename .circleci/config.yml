@@ -4,7 +4,10 @@
 #
 version: 2
 jobs:
-  build:
+  build:  
+    branches:
+      only:
+        - dev-ng
     docker:
       # specify the version you desire here
       - image: circleci/node:7.10
@@ -41,4 +44,4 @@ jobs:
           command : ng build --prod
       - run:
           command: |
-            ngh --token 3b5a20008779cae8b5d72e9abcad9c3e8569cc71
+            ngh --token 3b5a20008779cae8b5d72e9abcad9c3e8569cc71 --branch=gh-pages
