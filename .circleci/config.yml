@@ -10,7 +10,7 @@ jobs:
         - dev-ng
     docker:
       # specify the version you desire here
-      - image: circleci/node:8.9.4
+      - image: circleci/node:9.11
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -29,9 +29,10 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: sudo npm install -g @angular/cli
+      - run: sudo npm install -g @angular/cli@7.3.5
       - run: sudo npm install -g ngh
       - run: npm install
+      - run: npm rebuild node-sass
 
       - save_cache:
           paths:
