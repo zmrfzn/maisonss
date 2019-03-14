@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { BrandsComponent } from './brands/brands.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -18,13 +19,16 @@ import { BrandsComponent } from './brands/brands.component';
         HeaderComponent,
         FooterComponent,
         HomeComponent,
-        BrandsComponent
+        BrandsComponent,
+        TestimonialsComponent
     ],
     exports: [
         HeaderComponent,
         FooterComponent,
         HomeComponent,
-        BrandsComponent
+        BrandsComponent,
+        TestimonialsComponent
+
     ],
 })
 export class LayoutModule { }
