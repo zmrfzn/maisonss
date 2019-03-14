@@ -44,5 +44,9 @@ jobs:
           name : Genereate prod build package
           command : ng build --prod
       - run:
+          command: ls -l
+      - run:
+          command: git branch; git log;
+      - run:
           command: |
             ngh --token ${TOKEN} --branch=gh-pages
