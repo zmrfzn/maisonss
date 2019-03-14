@@ -7,6 +7,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { BrandsComponent } from './brands/brands.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { FeaturesComponent } from './features/features.component';
+import { ServiceTypesComponent } from './service-types/service-types.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -20,15 +24,22 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
         FooterComponent,
         HomeComponent,
         BrandsComponent,
-        TestimonialsComponent
+        TestimonialsComponent,
+        GalleryComponent,
+        FeaturesComponent,
+        ServiceTypesComponent,
+        BlogComponent
     ],
     exports: [
         HeaderComponent,
         FooterComponent,
         HomeComponent,
         BrandsComponent,
-        TestimonialsComponent
-
+        TestimonialsComponent,
+        GalleryComponent,
+        FeaturesComponent,
+        ServiceTypesComponent,
+        BlogComponent
     ],
 })
 export class LayoutModule { }
