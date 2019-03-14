@@ -40,7 +40,7 @@ jobs:
 
       # Generate build!
       - run: 
-          name : Genereate prod build
+          name : Genereate prod build package
           command : ng build --prod
       - run:
           command: |
