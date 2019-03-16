@@ -46,9 +46,11 @@ jobs:
       - run:
           name : Publishing package to gh-pages
           command : |
-              echo ${GIT_AUTHOR_NAME}
-              git config user.email "zmrfzn@gmail.com"
-              git config user.name "Zameer"
+              echo "AUTHOR" ${GIT_AUTHOR_NAME}
+              echo "EMAIL" $EMAIL
+              git config --global user.email "zmrfzn@gmail.com"
+              git config --global user.name "Zameer"
+              git config --global push.default simple
               git add package-lock.json; git commit -m "commit to be lost"      
               git checkout gh-pages
               git add prod/*
