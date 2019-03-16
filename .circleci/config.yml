@@ -43,11 +43,14 @@ jobs:
       - run: 
           name : Genereate prod build package
           command : ng build --prod --output-path="prod"
-      - run:
-          command: git add package-lock.json; git commit -m "commit to be lost"
-      - run:
-          command: git checkout gh-pages
-      - run:
-          command: git add prod/*
-      - run:
-          command: git commit -m "Circle CI PROD Build push"; git push origin/gh-pages      
+  deployment:
+      production:
+        branch: master
+        commands:
+            - echo ${GIT_AUTHOR_NAME}
+            - git config user.email "zmrfzn@gmail.com"
+            - git config user.name "Zameer"
+            - git add package-lock.json; git commit -m "commit to be lost"      
+            - git checkout gh-pages
+            - command: git add prod/*
+            - git commit -m "Circle CI PROD Build push"; git push origin/gh-pages      
