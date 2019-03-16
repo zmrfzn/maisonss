@@ -52,6 +52,6 @@ jobs:
               git config --global user.name "Zameer"
               git config --global push.default simple
               git add package-lock.json; git commit -m "commit to be lost"      
-              git checkout gh-pages
+              git checkout gh-pages-tests
               git add prod/*
-              git commit -m "Circle CI PROD Build push"; git push origin/gh-pages
+              git commit -m "Circle CI PROD Build push"; git push origin gh-pages-tests
