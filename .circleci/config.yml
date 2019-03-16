@@ -45,11 +45,11 @@ jobs:
           command : ng build --prod --output-path="prod"
       - run:
           name : Publishing package to gh-pages
-          commands:
-              - echo ${GIT_AUTHOR_NAME}
-              - git config user.email "zmrfzn@gmail.com"
-              - git config user.name "Zameer"
-              - git add package-lock.json; git commit -m "commit to be lost"      
-              - git checkout gh-pages
-              - git add prod/*
-              - git commit -m "Circle CI PROD Build push"; git push origin/gh-pages      
+          command : |
+              echo ${GIT_AUTHOR_NAME}
+              git config user.email "zmrfzn@gmail.com"
+              git config user.name "Zameer"
+              git add package-lock.json; git commit -m "commit to be lost"      
+              git checkout gh-pages
+              git add prod/*
+              git commit -m "Circle CI PROD Build push"; git push origin/gh-pages   
