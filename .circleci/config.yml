@@ -42,13 +42,12 @@ jobs:
       # Generate build!
       - run: 
           name : Genereate prod build package
-          command : ng build --prod
+          command : ng build --prod --output-path="prod"
+      - run:
+          command: git add package-lock.json; git commit -m "commit to be lost"
       - run:
           command: git checkout gh-pages
       - run:
-          command: git add dist/*
+          command: git add prod/*
       - run:
-          command: git commit -m "Circle CI Build update"; git push origin/gh-pages
-      - run:
-          command: |
-            ngh --token ${TOKEN} --branch=gh-pages
+          command: git commit -m "Circle CI PROD Build push"; git push origin/gh-pages      
