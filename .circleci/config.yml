@@ -52,4 +52,4 @@ jobs:
               git add package-lock.json; git commit -m "commit to be lost"      
               git checkout gh-pages
               git add prod/*
-              git commit -m "Circle CI PROD Build push"; git push origin/gh-pages   
+              git commit -m "Circle CI PROD Build push"; git push origin/gh-pages
