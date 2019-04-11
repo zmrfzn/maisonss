@@ -5,9 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
-  SupportMailId = 'support@maisonss.com';
-  SupportPhone = '+91 012 3654 86';
-
+  SupportMailId = 'reachusatmaisonss@gmail.com';
+  SupportPhone = '+91 93465 91525';
   constructor() { }
 
   ngOnInit() {

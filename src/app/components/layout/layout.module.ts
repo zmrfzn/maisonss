@@ -11,6 +11,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { FeaturesComponent } from './features/features.component';
 import { ServiceTypesComponent } from './service-types/service-types.component';
 import { BlogComponent } from './blog/blog.component';
+import { CallInfoComponent } from './call-info/call-info.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { BlogComponent } from './blog/blog.component';
         GalleryComponent,
         FeaturesComponent,
         ServiceTypesComponent,
-        BlogComponent
+        BlogComponent,
+        CallInfoComponent
     ],
     exports: [
         HeaderComponent,
@@ -39,7 +41,8 @@ import { BlogComponent } from './blog/blog.component';
         GalleryComponent,
         FeaturesComponent,
         ServiceTypesComponent,
-        BlogComponent
+        BlogComponent,
+        CallInfoComponent
     ],
 })
 export class LayoutModule { }
