@@ -1,6 +1,6 @@
 <?php
 //Set Access-Control-Allow-Origin with PHP
-header('Access-Control-Allow-Origin: http://localhost:4200', false);
+header('Access-Control-Allow-Origin: *', false);
 
 require 'vendor/autoload.php'; // If you're using Composer (recommended)
 // Comment out the above line if not using Composer
