@@ -1,4 +1,6 @@
 <?php
+//Set Access-Control-Allow-Origin with PHP
+header('Access-Control-Allow-Origin: http://localhost:4200', false);
 
 require 'vendor/autoload.php'; // If you're using Composer (recommended)
 // Comment out the above line if not using Composer
@@ -14,6 +16,7 @@ $API_KEY = 'SG.qAfSjjEoRtyAUH_MdAVcyA.ZB41USJtoL70MUh6oxinEJ__TJoGHQfuQvfD2DLh10
 
 $FROM_EMAIL = $_POST['email'];
 $FROM_NAME = $_POST['name'];
+$FROM_PHONE = $_POST['phone'];
 // they dont like when it comes from @gmail, prefers business
 // emails
 
@@ -27,7 +30,7 @@ $MAIL_SUBJECT = $_POST['subject'];
 
 settype($MAIL_SUBJECT,"string");
 
-$MAIL_CONTENT = $_POST["message"];
+$MAIL_CONTENT = $_POST["message"]. "<br/><br/><br/>".'Phone Number:'.$FROM_PHONE;
 
 $from = new \SendGrid\Mail\From($FROM_EMAIL, $FROM_NAME);
 $subject = new \SendGrid\Mail\Subject($MAIL_SUBJECT);

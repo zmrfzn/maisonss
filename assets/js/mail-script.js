@@ -8,7 +8,7 @@
         // form submit event
         form.on('submit', function(e) {
             e.preventDefault(); // prevent default form submit
-
+            e.stopImmediatePropagation();
             $.ajax({
                 url: 'http://maisonss.com/mailserver/mail.php', // form action url
                 type: 'POST', // form submit method get/post
