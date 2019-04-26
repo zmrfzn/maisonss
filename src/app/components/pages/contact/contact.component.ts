@@ -14,4 +14,9 @@ export class ContactComponent implements OnInit {
     this.href = this.router.url;
   }
 
+  onFormSubmit(e) {
+    e.preventDefault();
+  }
+
+
 }

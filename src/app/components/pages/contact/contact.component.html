@@ -26,7 +26,9 @@
             <span class="lnr lnr-home"></span>
           </div>
           <div class="contact-details">
-            <h5>Coming Soon!</h5>
+            <h5>1st Floor, #3-2-68,<br/>
+              Indira Nagar Colony, Khammam, <br />
+              Telangana State-507002</h5>
             <p>
               <!-- 4343 Hinkle Deegan Lake Road -->
             </p>
@@ -53,7 +55,7 @@
         </div>
       </div>
       <div class="col-lg-8">
-        <form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+        <form class="form-area " id="myForm" action="mailserver/mail.php" method="POST"  class="contact-form text-right" (ngSubmit)="onFormSubmit($event)">
           <div class="row">
             <div class="col-lg-6 form-group">
               <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
@@ -64,6 +66,10 @@
                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required=""
                 type="email">
+
+                <input name="phone" placeholder="Enter Phone Number" pattern="[6-9]{1}[0-9]{9}" maxlength="10"
+                  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Phone Number'"
+                  class="common-input mb-20 form-control" required="" type="text">
 
               <input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''"
                 onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required=""
