@@ -20,8 +20,8 @@ $FROM_PHONE = $_POST['phone'];
 // they dont like when it comes from @gmail, prefers business
 // emails
 
-//$TO_EMAIL = 'reachusatmaisonss@gmail.com';
-$TO_EMAIL = 'catchme44@yahoo.com';
+$TO_EMAIL = 'reachusatmaisonss@gmail.com';
+//$TO_EMAIL = 'catchme44@yahoo.com';
 
 // Try to be nice. Take a look at the anti spam laws. In most
 // cases, you must have an unsubscribe. You also cannot be
