@@ -13,7 +13,7 @@ export class GalleryComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.href = 'project-info';
+    this.href = this.router.url;
 
     if (this.router.url === '/projects')  {
       this.SectionClass = 'section-gap';

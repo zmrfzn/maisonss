@@ -1,0 +1,19 @@
+{
+    "Projects": [
+        {
+            "Id": 1,
+            "ProjectName":"Lavendar ambient interior",
+            "DesignName": "false ceiling type with step 1 design",
+            "DesignSpecs": "High quality gypsum material used with good thickness such that it long lasts and assuring there won’tbe any damage for a longer period of time.",
+            "ImageUrl":"assets/img/g1.jpg"
+            
+        },
+        {
+            "Id": 2,            
+            "ProjectName": "Ambient interior",
+            "DesignName": "false ceiling type with step 1 design",
+            "DesignSpecs": "High quality gypsum material used with good thickness such that it long lasts and assuring there won’tbe any damage for a longer period of time.",
+            "ImageUrl": "assets/img/g2.jpg"     
+        }
+    ]
+}

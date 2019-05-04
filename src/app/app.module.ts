@@ -11,6 +11,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ProjectDetailsComponent } from './components/pages/project-details/project-details.component';
 import { HomeComponent } from './components/layout/home/home.component';
+import { PagenotfoundComponent } from './components/pages/pagenotfound/pagenotfound.component';
 
 const appRoutes: Routes = [
 
@@ -19,7 +20,7 @@ const appRoutes: Routes = [
   { path: 'about-us', component: AboutComponent },
   { path: 'contact-us', component: ContactComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'project-info', component: ProjectDetailsComponent },
+  { path: 'project/:ProjectId', component: ProjectDetailsComponent },
   {
     path: 'home',
 
@@ -29,7 +30,7 @@ const appRoutes: Routes = [
 
   }
   // ,
-  // { path: '**', component: PageNotFoundComponent }
+  // { path: '**', component: HomeComponent }
 
 ];
 
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     ServicesComponent,
     ContactComponent,
     ProjectsComponent,
-    ProjectDetailsComponent
+    ProjectDetailsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
